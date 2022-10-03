@@ -317,11 +317,6 @@ body {
     background-color: var(--strong-cyan);
 }
 
-.label_off {
-    position: absolute;
-    opacity: 0;
-}
-
 /* MEDIA QUERY */
 @media screen and (max-width: 880px) {
 
