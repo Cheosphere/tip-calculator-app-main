@@ -72,6 +72,7 @@ body {
     display: flex;
     border-radius: 1.5rem;
     background-color: var(--white);
+    box-shadow: 0 3rem 3rem rgba(41, 61, 76, 0.08) ;
 }
 
 .input_data {
