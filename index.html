@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+  <title>Tip Calculator App</title>
+</head>
+
+<body>
+  <main class="container">
+    <h1 class="container_title">SPLI<br>TTER</h1>
+    <div class="wrapper">
+      <div class="input_data">
+        <form action="#" class="form">
+          <p class="bill_title">Bill</p>
+          <label for="bill" class="form_label_bill">$</label>
+          <input type="text" name="bill" class="form_bill_input" id="bill" placeholder="0" maxlength="7"
+            onkeypress="return event.charCode>=46 && event.charCode<=57"
+            onkeyup="total()">
+          <span class="span_bill" id="span_bill">Can't be zero</span>
+          <p class="tip_title">Select Tip %</p>
+          <div class="tip_values">
+            <label for="5%" class="label_off">5%</label>
+            <input type="text" name="5%" value="5%" readonly id="5%" class="tip_values_item">
+            <label for="10%" class="label_off">10%</label>
+            <input type="text" name="10%" value="10%" readonly id="10%" class="tip_values_item">
+            <label for="15%" class="label_off">15%</label>
+            <input type="text" name="15%" value="15%" readonly id="15%" class="tip_values_item">
+            <label for="25%" class="label_off">25%</label>
+            <input type="text" name="25%" value="25%" readonly id="25%" class="tip_values_item">
+            <label for="50%" class="label_off">50%</label>
+            <input type="text" name="50%" value="50%" readonly id="50%" class="tip_values_item">
+            <label for="custom" class="label_off">custom</label>
+            <input type="text" name="custom" placeholder="Custom" id="custom" class="tip_values_item_custom" maxlength="3"
+              onkeypress="return event.charCode>=46 && event.charCode<=57"
+              onkeyup="total()">
+          </div>
+          <p class="people_title">Number of People</p>
+          <label for="people" class="form_label_people"><img src="images/icon-person.svg" alt="icon person"></label>
+          <input type="text" name="people" placeholder="0" class="form_people_input" id="people" maxlength="3"
+            onkeypress="return event.charCode>=46 && event.charCode<=57"
+            onkeyup="total()">
+          <span class="span_people" id="span_people">Can't be zero</span>
+        </form>
+      </div>
+      <div class="result">
+        <div class="result_wrapper">
+          <section class="result_tipAmount">
+            <h2 class="result_tip_amount_title">Tip Amount<br><span>/ person</span></h2>
+            <h3 class="result_tip_amount_value" id="tip_amount">$0.00</h3>
+          </section>
+          <section class="result_total">
+            <h2 class="result_total_title">Total<br><span>/ person</span></h2>
+            <h3 class="result_total_value" id="total_person">$0.00</h3>
+          </section>
+          <button class="result_wrapper_btn" id="reset">RESET</button>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
