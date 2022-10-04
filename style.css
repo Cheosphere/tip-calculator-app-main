@@ -63,6 +63,7 @@ body {
     opacity: .75;
 }
 
+/* WRAPPER STYLES */
 .wrapper {
     width: 100%;
     max-width: 920px;
@@ -72,9 +73,10 @@ body {
     display: flex;
     border-radius: 1.5rem;
     background-color: var(--white);
-    box-shadow: 0 3rem 3rem rgba(41, 61, 76, 0.08) ;
+    box-shadow: 0 3rem 3rem rgba(41, 61, 76, 0.08);
 }
 
+/* INPUT DATA AREA STYLES */
 .input_data {
     width: 50%;
     height: 100%;
@@ -87,6 +89,7 @@ body {
     position: relative;
 }
 
+/* BILL DATA INPUT AREA STYLES */
 .bill_title {
     margin-bottom: .38rem;
     color: var(--dark-grayish-cyan);
@@ -123,6 +126,7 @@ body {
     color: var(--grayish-cyan);
 }
 
+/* TIP DATA AREA STYLES */
 .tip_title {
     margin-bottom: 1rem;
     color: var(--dark-grayish-cyan);
@@ -177,6 +181,7 @@ body {
     color: var(--very-dark-cyan);
 }
 
+/* PEOPLE DATA AREA STYLES */
 .people_title {
     margin-bottom: .4rem;
     color: var(--dark-grayish-cyan);
@@ -293,7 +298,7 @@ body {
 
 .result_wrapper_btn {
     width: 100%;
-    padding: .52rem;
+    padding: .55rem;
     margin-top: auto;
     font-family: 'Space Mono', monospace;
     font-size: 1.25rem;

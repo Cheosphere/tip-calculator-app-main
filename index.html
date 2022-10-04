@@ -15,17 +15,22 @@
 </head>
 
 <body>
+  <!-- CONTAINER -->
   <main class="container">
     <h1 class="container_title">SPLI<br>TTER</h1>
+    <!-- WRAPPER -->
     <div class="wrapper">
+      <!-- INPUT DATA AREA (BILL, TIP, PEOPLE) -->
       <div class="input_data">
+        <!-- INPUT BILL DATA -->
         <form action="#" class="form">
           <p class="bill_title">Bill</p>
           <label for="bill" class="form_label_bill">$</label>
           <input type="text" name="bill" class="form_bill_input" id="bill" placeholder="0" maxlength="7"
             onkeypress="return event.charCode>=46 && event.charCode<=57"
-            onkeyup="total()">
+            onkeyup="totalCalc()">
           <span class="span_bill" id="span_bill">Can't be zero</span>
+          <!-- INPUT TIP AREA -->
           <p class="tip_title">Select Tip %</p>
           <div class="tip_values">
             <input type="text" name="5%" value="5%" readonly id="5%" class="tip_values_item">
@@ -35,16 +40,18 @@
             <input type="text" name="50%" value="50%" readonly id="50%" class="tip_values_item">
             <input type="text" name="custom" placeholder="Custom" id="custom" class="tip_values_item_custom" maxlength="3"
               onkeypress="return event.charCode>=46 && event.charCode<=57"
-              onkeyup="total()">
+              onkeyup="totalCalc()">
           </div>
+          <!-- INPUT PEOPLE NUMBER AREA -->
           <p class="people_title">Number of People</p>
           <label for="people" class="form_label_people"><img src="images/icon-person.svg" alt="icon person"></label>
           <input type="text" name="people" placeholder="0" class="form_people_input" id="people" maxlength="3"
             onkeypress="return event.charCode>=46 && event.charCode<=57"
-            onkeyup="total()">
+            onkeyup="totalCalc()">
           <span class="span_people" id="span_people">Can't be zero</span>
         </form>
       </div>
+      <!-- RESULT CALC AREA -->
       <div class="result">
         <div class="result_wrapper">
           <section class="result_tipAmount">
